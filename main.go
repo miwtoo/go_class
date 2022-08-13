@@ -13,6 +13,16 @@ func main()  {
 	if ok := isCorrect(); ok {
 		println("it' correct")
 	}
+
+	println("power(2, 3): ", power(2, 3) )
+}
+
+func power(b, x int) int {
+	r := 1
+	for i := 0; i < x; i++ {
+		r *= b
+	}
+	return r
 }
 
 func isCorrect() bool {
