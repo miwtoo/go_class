@@ -1,9 +1,11 @@
 package main
 
+import "fmt"
+
 func main()  {
 	println("Hello, World!")
 
-	print("squareArea: ", squareArea(2))
+	fmt.Println("squareArea: ", squareArea(2))
 }
 
 func squareArea(a float64) float64  {
