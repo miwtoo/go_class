@@ -51,3 +51,14 @@ func TestGivenFourWantFour(t *testing.T)()  {
 		t.Errorf("Say(%d) = %q, want %s", given, result, want)
 	}
 }
+
+func TestGivenFiveWantBar(t *testing.T)()  {
+	given := 5
+	want := "Bar"
+
+	result := foo.Say(given)
+
+	if result != want {
+		t.Errorf("Say(%d) = %q, want %s", given, result, want)
+	}
+}
