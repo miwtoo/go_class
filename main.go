@@ -3,6 +3,11 @@ package main
 import (
 	"fmt"
 	"os"
+
+	"github.com/miwtoo/go_class/foo" // suggest
+	// any_name "github.com/miwtoo/go_class/foo"
+	// _ "github.com/miwtoo/go_class/foo"
+	// . "github.com/miwtoo/go_class/foo"
 )
 
 var name string = "Miwtoo"
@@ -13,7 +18,8 @@ func main() {
 	if n != "" {
 		name = n
 	}
-	fmt.Println("Hello, ", name)
+	fmt.Println("Hello, ", foo.Title , name)
+
 }
 
 // func main()  {
