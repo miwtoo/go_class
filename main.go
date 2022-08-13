@@ -26,6 +26,22 @@ func main() {
 	fmt.Println(couple.Couple("abcdefg"))
 	fmt.Println(couple.Couple("ฟหกดสว"))
 
+	m := map[string]int {
+		"G": 71,
+		"O": 79,
+		"P": 80,
+		"H": 72,
+		"E": 69,
+		"R": 82,
+	}
+
+	keys := []string{}
+	for i := range m {
+		keys = append(keys, i)
+	}
+
+	fmt.Println(keys)
+
 }
 
 // func main()  {
