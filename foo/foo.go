@@ -3,6 +3,10 @@ package foo
 var Title = "Hell Title"
 
 func Say(n int) string {
+	if n == 8 {
+		return "8"
+	}
+
 	if n == 7 {
 		return "7"
 	}
