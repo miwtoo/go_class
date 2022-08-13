@@ -8,6 +8,8 @@ import (
 	// any_name "github.com/miwtoo/go_class/foo"
 	// _ "github.com/miwtoo/go_class/foo"
 	// . "github.com/miwtoo/go_class/foo"
+
+	"github.com/miwtoo/go_class/couple"
 )
 
 var name string = "Miwtoo"
@@ -19,6 +21,9 @@ func main() {
 		name = n
 	}
 	fmt.Println("Hello, ", foo.Title , name)
+
+	fmt.Println(couple.Couple("abcdef"))
+	fmt.Println(couple.Couple("abcdefg"))
 
 }
 
