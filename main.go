@@ -24,6 +24,7 @@ func main() {
 
 	fmt.Println(couple.Couple("abcdef"))
 	fmt.Println(couple.Couple("abcdefg"))
+	fmt.Println(couple.Couple("ฟหกดสว"))
 
 }
 

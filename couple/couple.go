@@ -1,10 +1,11 @@
 package couple
 
-func Couple(s string) []string {
+func Couple(str string) []string {
 	var r []string
+	s := []rune(str)
 
-	for s += "*"; len(s) > 1; s = s[2:]{
-		r = append(r, s[:2])
+	for s = append(s, []rune("*")...); len(s) > 1; s = s[2:]{
+		r = append(r, string(s[:2]))
 	}
 
 	return r
