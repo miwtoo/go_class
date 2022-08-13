@@ -13,14 +13,6 @@ func Say(n int) string {
 		return "Foo"
 	}
 
-	if n == 8 {
-		return strconv.Itoa(n)
-	}
-
-	if n == 7 {
-		return strconv.Itoa(n)
-	}
-
 	if n == 6 {
 		return "Foo"
 	}
@@ -29,17 +21,10 @@ func Say(n int) string {
 		return "Bar"
 	}
 
-	if n == 4 {
-		return strconv.Itoa(n)
-	}
-
 	if n == 3 {
 		return "Foo"
 	}
 
-	if n == 2 {
-		return strconv.Itoa(n)
-	}
 
 	return strconv.Itoa(n)
 }
