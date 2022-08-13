@@ -1,5 +1,7 @@
 package foo
 
+import "strconv"
+
 var Title = "Hell Title"
 
 func Say(n int) string {
@@ -12,11 +14,11 @@ func Say(n int) string {
 	}
 
 	if n == 8 {
-		return "8"
+		return strconv.Itoa(n)
 	}
 
 	if n == 7 {
-		return "7"
+		return strconv.Itoa(n)
 	}
 
 	if n == 6 {
@@ -28,7 +30,7 @@ func Say(n int) string {
 	}
 
 	if n == 4 {
-		return "4"
+		return strconv.Itoa(n)
 	}
 
 	if n == 3 {
@@ -36,8 +38,8 @@ func Say(n int) string {
 	}
 
 	if n == 2 {
-		return "2"
+		return strconv.Itoa(n)
 	}
 
-	return "1"
+	return strconv.Itoa(n)
 }
