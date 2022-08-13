@@ -1,38 +1,52 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
-func main()  {
-	println("Hello, World!")
+var name string = "Miwtoo"
 
-	fmt.Println("squareArea: ", squareArea(2))
-
-	a, b := swap(1, 2)
-	fmt.Println("swap(1, 2): ", a, b)
-
-	if ok := isCorrect(); ok {
-		println("it' correct")
+func main() {
+	// NAME=miwtoo go run main.go 
+	n := os.Getenv("NAME")
+	if n != "" {
+		name = n
 	}
-
-	println("power(2, 3): ", power(2, 3) )
+	fmt.Println("Hello, ", name)
 }
 
-func power(b, x int) int {
-	r := 1
-	for i := 0; i < x; i++ {
-		r *= b
-	}
-	return r
-}
+// func main()  {
+// 	println("Hello, World!")
 
-func isCorrect() bool {
-	return true
-}
+// 	fmt.Println("squareArea: ", squareArea(2))
 
-func swap(a,b int) (int, int) {
-	return b, a
-}
+// 	a, b := swap(1, 2)
+// 	fmt.Println("swap(1, 2): ", a, b)
 
-func squareArea(a float64) float64  {
-	return a * a
-}
+// 	if ok := isCorrect(); ok {
+// 		println("it' correct")
+// 	}
+
+// 	println("power(2, 3): ", power(2, 3) )
+// }
+
+// func power(b, x int) int {
+// 	r := 1
+// 	for i := 0; i < x; i++ {
+// 		r *= b
+// 	}
+// 	return r
+// }
+
+// func isCorrect() bool {
+// 	return true
+// }
+
+// func swap(a,b int) (int, int) {
+// 	return b, a
+// }
+
+// func squareArea(a float64) float64  {
+// 	return a * a
+// }
